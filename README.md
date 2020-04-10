@@ -22,7 +22,8 @@ Chromedriver is also an executable. Download link: (https://chromedriver.chromiu
 4. Filter and save posts to database.
 5. Repeat step 1 to 4 at time interval as defined in a cron job (optional).
  #### To run:
-`python web_scraping.py [SEARCH TERM] [MYSQL TABLE NAME]` e.i python web_scraping.py 冠状病毒 武汉肺炎 武汉封城 weibo_tweets
+`python web_scraping.py [SEARCH TERM] [MYSQL TABLE NAME]` i.e python web_scraping.py 冠状病毒 武汉肺炎 武汉封城 weibo_tweets
+
  Multiple search terms are supported. Just make sure the last argument is the table name.
 Beware of CAPTCHA if too many page requests are submitted at the same time.
 
