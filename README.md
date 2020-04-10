@@ -7,7 +7,10 @@ A Web scrapper specially designed for scrapping content returned by specific sea
 4. python-crontab (optional) for Linux or Mac and Task Scheduler for Windows
 
 PhantomJS is an executable. Download link: (http://phantomjs.org/download.html)
+
 Chromedriver is also an executable. Download link: (https://chromedriver.chromium.org/downloads)
+It is already downloaded here for you 
+
  ## The Scrapper
  * No sign-in to Weibo is required.
 * Scrape full content by expanding long posts that have been clipped by JavaScript.
@@ -31,7 +34,7 @@ Beware of CAPTCHA if too many page requests are submitted at the same time.
 Good tutorial: https://datatofish.com/python-script-windows-scheduler/
 
 1. Make sure your script works and all dependicies are in place for Windows 
-2. Create .Bat script that will automatically run script from CMD 
+2. Create .Bat script that will automatically run script from CMD (There is a sample .Bat file in repot that works web_scrape.bat)
 3. Go to search bar and search for task scheduler and from there instructions are pretty straight forward
 4. Filter and save posts to database.
 5. I run my script for 12 hrs over night and in 15 minute intervals(Admin privaleges are required)
