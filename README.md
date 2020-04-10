@@ -1,12 +1,13 @@
-# weibo-scrapper
+# weibo-scrapper for Windows
 A Web scrapper specially designed for scrapping content returned by specific search term(s) on Weibo, in real-time.
  #### Dependencies
 1. Selenium
 2. PyMySQL
-3. PhantomJS (optional)
-4. python-crontab (optional)
+3. PhantomJS (optional) or ChromeDriver(Support for Phantom Js is obselete)
+4. python-crontab (optional) for Linux or Mac and Task Scheduler for Windows
 
 PhantomJS is an executable. Download link: (http://phantomjs.org/download.html)
+Chromedriver is also an executable. Download link: (https://chromedriver.chromium.org/downloads)
  ## The Scrapper
  * No sign-in to Weibo is required.
 * Scrape full content by expanding long posts that have been clipped by JavaScript.
@@ -21,6 +22,15 @@ PhantomJS is an executable. Download link: (http://phantomjs.org/download.html)
 4. Filter and save posts to database.
 5. Repeat step 1 to 4 at time interval as defined in a cron job (optional).
  #### To run:
-`python web_scraping.py [SEARCH TERM] [MYSQL TABLE NAME]`
+`python web_scraping.py [SEARCH TERM] [MYSQL TABLE NAME]` e.i python web_scraping.py 冠状病毒 武汉肺炎 武汉封城 weibo_tweets
  Multiple search terms are supported. Just make sure the last argument is the table name.
 Beware of CAPTCHA if too many page requests are submitted at the same time.
+
+### Scheduled Task for Windows OS
+Good tutorial: https://datatofish.com/python-script-windows-scheduler/
+
+1. Make sure your script works and all dependicies are in place for Windows 
+2. Create .Bat script that will automatically run script from CMD 
+3. Go to search bar and search for task scheduler and from there instructions are pretty straight forward
+4. Filter and save posts to database.
+5. I run my script for 12 hrs over night and in 15 minute intervals(Admin privaleges are required)
