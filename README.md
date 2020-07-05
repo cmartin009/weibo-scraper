@@ -1,4 +1,4 @@
-# weibo-scrapper for Windows
+# weibo-scraper for Windows
 A Web scrapper specially designed for scrapping content returned by specific search term(s) on Weibo, in real-time.
  #### Dependencies
 1. Selenium
@@ -11,7 +11,7 @@ PhantomJS is an executable. Download link: (http://phantomjs.org/download.html)
 Chromedriver is also an executable. Download link: (https://chromedriver.chromium.org/downloads)
 It is already downloaded here for you 
 
- ## The Scrapper
+ ## The Scraper
  * No sign-in to Weibo is required.
 * Scrape full content by expanding long posts that have been clipped by JavaScript.
 * Parallel scraping with multi-threading.
