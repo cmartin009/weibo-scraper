@@ -38,3 +38,4 @@ Good tutorial: https://datatofish.com/python-script-windows-scheduler/
 3. Go to search bar and search for task scheduler and from there instructions are pretty straight forward
 4. Filter and save posts to database.
 5. I run my script for 12 hrs over night and in 15 minute intervals(Admin privaleges are required)
+6. cronjob can also be used on server but privelages needed
